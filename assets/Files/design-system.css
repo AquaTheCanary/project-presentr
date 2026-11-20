@@ -1,0 +1,129 @@
+/* Interactive Studio — unified product design system */
+:root{--is-ink:#20212a;--is-muted:#737582;--is-subtle:#9699a5;--is-line:#e8e9ee;--is-surface:#fff;--is-page:#f8f9fb;--is-soft:#f4f5f8;--is-accent:#625bf6;--is-accent-hover:#5149e7;--is-accent-soft:#f1f0ff;--is-radius:10px;--is-radius-lg:14px;--is-shadow:0 8px 28px rgba(28,30,48,.055);color-scheme:light}
+html{background:var(--is-page);color:var(--is-ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{color:var(--is-ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*,*:before,*:after{box-sizing:border-box}a{color:inherit}button,input,select,textarea{font:inherit}button{-webkit-tap-highlight-color:transparent}::selection{background:#e7e5ff;color:#28234f}
+.site-header,.home-nav,.app-header,.marketing-nav{width:100%!important;max-width:none!important;min-height:64px!important;height:auto!important;margin:0!important;padding:0 clamp(20px,4vw,56px)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;background:rgba(255,255,255,.97)!important;border:0!important;border-bottom:1px solid var(--is-line)!important;border-radius:0!important;box-shadow:none!important;position:relative!important;z-index:20!important}
+.marketing-nav{min-height:72px!important;padding-inline:clamp(20px,4vw,56px)!important}
+.nav-brand,.marketing-brand{display:flex!important;align-items:center!important;gap:10px!important;min-width:0!important;text-decoration:none!important}
+.brand-logo{height:29px!important;width:auto!important;max-width:140px!important;object-fit:contain!important}
+.brand-name{font-size:13px!important;line-height:1!important;font-weight:650!important;letter-spacing:-.02em!important;color:var(--is-ink)!important}
+.marketing-brand{font-size:14px!important;font-weight:650!important;letter-spacing:-.025em!important;color:var(--is-ink)!important}.marketing-brand img{width:29px!important;height:29px!important}
+.nav-links,.marketing-navlinks{display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;min-width:0!important;flex:1 1 auto!important}
+.nav-links a,.marketing-navlinks a{display:inline-flex!important;align-items:center!important;min-height:36px!important;padding:0 11px!important;border-radius:7px!important;text-decoration:none!important;color:#666875!important;font-size:12px!important;font-weight:550!important;white-space:nowrap!important;transition:background .15s,color .15s!important}
+.nav-links a:hover,.marketing-navlinks a:hover{background:var(--is-soft)!important;color:var(--is-ink)!important}.nav-links a.active,.marketing-navlinks a.active{background:var(--is-accent-soft)!important;color:var(--is-accent-hover)!important}
+.nav-actions,.marketing-actions{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:9px!important;flex:0 0 auto!important;min-width:0!important}
+.user-email-badge{display:inline-flex!important;align-items:center!important;max-width:220px!important;min-height:32px!important;padding:0 10px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;background:#fafafd!important;border:1px solid var(--is-line)!important;border-radius:7px!important;color:#6f7180!important;font-size:10px!important;font-weight:550!important}
+.marketing-navlinks a,.marketing-signin{font-size:12px!important}
+.marketing-cta,.btn-launch,.btn-primary-large,.btn-primary-small,.btn-launch-small{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;min-height:36px!important;padding:0 14px!important;border:1px solid var(--is-accent)!important;border-radius:8px!important;background:var(--is-accent)!important;color:#fff!important;font-size:12px!important;font-weight:620!important;text-decoration:none!important;box-shadow:none!important;transition:background .15s,border-color .15s!important;cursor:pointer!important}
+.marketing-cta:hover,.btn-launch:hover,.btn-primary-large:hover,.btn-primary-small:hover,.btn-launch-small:hover{background:var(--is-accent-hover)!important;border-color:var(--is-accent-hover)!important}
+.btn-secondary-small,.btn-secondary,.btn-outline,.toolbtn{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;min-height:36px!important;padding:0 13px!important;border:1px solid #e2e3e9!important;border-radius:8px!important;background:#fff!important;color:#454653!important;font-size:12px!important;font-weight:570!important;text-decoration:none!important;box-shadow:none!important;cursor:pointer!important}
+.btn-secondary-small:hover,.btn-secondary:hover,.btn-outline:hover,.toolbtn:hover{background:#f8f8fb!important;border-color:#d6d7e0!important}.marketing-signin{color:#555766!important;text-decoration:none!important;font-weight:560!important}
+.mobile-menu-button{border:1px solid var(--is-line)!important;background:#fff!important;border-radius:8px!important;color:var(--is-ink)!important;padding:8px 11px!important}
+.page-body{background:var(--is-page)!important;color:var(--is-ink)!important}h1,h2,h3,h4{color:var(--is-ink)}h1{letter-spacing:-.045em}p{line-height:1.65}.section-kicker{color:var(--is-accent)!important;font-size:10px!important;font-weight:700!important;letter-spacing:.12em!important}.muted,.text-sub,.subtle{color:var(--is-muted)!important}
+.card,.panel,.settings-card,.app-card,.project-card,.dashboard-card,.stat-card,.feature-card,.pricing-card,.resource-card,.form-card{background:var(--is-surface)!important;border:1px solid var(--is-line)!important;border-radius:var(--is-radius-lg)!important;box-shadow:none!important}
+.card:hover,.app-card:hover,.project-card:hover,.feature-card:hover{box-shadow:var(--is-shadow)!important;transform:translateY(-1px)}
+input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{border-color:#e1e2e9;border-radius:8px;color:var(--is-ink);background:#fff;box-shadow:none}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#aaa5ff!important;box-shadow:0 0 0 3px rgba(98,91,246,.10)!important}
+hr{border:0;border-top:1px solid var(--is-line)}
+footer{width:100%;background:#fff!important;border-top:1px solid var(--is-line)!important;color:var(--is-muted)!important}
+.footer-inner{width:min(1240px,calc(100% - 48px))!important;min-height:64px;margin:0 auto!important;padding:16px 0!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;font-size:11px!important}
+.footer-inner a,footer a{color:#666875!important;text-decoration:none!important}.footer-inner a:hover,footer a:hover{color:var(--is-accent)!important}
+.auth-page{background:var(--is-page)!important;color:var(--is-ink)!important}.auth-card,.auth-panel,.login-card,.signup-card{border:1px solid var(--is-line)!important;border-radius:14px!important;box-shadow:0 8px 32px rgba(28,30,48,.045)!important}
+.form-field,.field,.response-row,.response,.list button,.form-list-item{border-color:var(--is-line)!important;border-radius:9px!important;box-shadow:none!important}button:disabled{opacity:.55;cursor:not-allowed!important}
+@media(max-width:760px){.site-header,.home-nav,.app-header,.marketing-nav{min-height:60px!important;flex-wrap:wrap!important;gap:0 10px!important;padding:8px 14px 0!important}.nav-brand,.marketing-brand{order:1!important;min-height:38px!important;max-width:calc(100% - 120px)!important}.nav-actions,.marketing-actions{order:2!important;margin-left:auto!important;min-height:38px!important;gap:6px!important;max-width:55%!important}.nav-links,.marketing-navlinks{order:3!important;display:flex!important;flex:0 0 calc(100% + 28px)!important;width:calc(100% + 28px)!important;max-width:none!important;margin:7px -14px 0!important;padding:0 14px 8px!important;justify-content:flex-start!important;gap:5px!important;overflow-x:auto!important;overflow-y:hidden!important;white-space:nowrap!important;border:0!important;border-top:1px solid var(--is-line)!important;background:#fff!important;scrollbar-width:none!important}.nav-links::-webkit-scrollbar,.marketing-navlinks::-webkit-scrollbar{display:none}.nav-links a,.marketing-navlinks a{flex:0 0 auto!important;min-height:33px!important;padding:0 10px!important;font-size:11px!important}.mobile-menu-button{display:none!important}.user-email-badge{max-width:28vw!important}.footer-inner{width:calc(100% - 32px)!important;flex-wrap:wrap!important}}
+@media(max-width:420px){.site-header,.home-nav,.app-header,.marketing-nav{padding-inline:10px!important}.nav-actions,.marketing-actions{gap:4px!important}.brand-name{max-width:95px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+
+/* Page-specific components share the same geometry and visual weight */
+.apps-hero,.apps-wrap,.settings-shell,.forms-shell,.shell{max-width:1200px}
+.apps-hero{padding-top:64px!important;padding-bottom:28px!important}
+.apps-hero h1,.settings-head h1,.forms-heading h1,.hero h1{font-size:clamp(32px,4.4vw,48px)!important;line-height:1.08!important;letter-spacing:-.052em!important;font-weight:650!important}
+.apps-hero p,.settings-head p,.forms-heading p,.hero p{font-size:13px!important;color:var(--is-muted)!important;line-height:1.7!important}
+.apps-grid,.projects-grid,.product-grid,.detail-grid,.principles-grid{gap:14px!important}
+.app-card,.project-card,.product-card,.feature-card,.settings-card{padding:20px!important;border-radius:12px!important}
+.app-card h3,.project-card h3,.product-card h3,.feature-card h3{font-size:14px!important;font-weight:650!important;letter-spacing:-.02em!important}
+.app-card p,.project-card p,.product-card p,.feature-card p{font-size:12px!important;line-height:1.65!important;color:var(--is-muted)!important}
+.project-card,.app-card,.product-card{transition:border-color .15s,box-shadow .15s!important}
+.project-card:hover,.app-card:hover,.product-card:hover{border-color:#d9d8e8!important;box-shadow:0 5px 18px rgba(28,30,48,.045)!important;transform:translateY(-1px)!important}
+.card-thumb{border-radius:8px!important;overflow:hidden!important}
+.settings-shell{padding-top:38px!important}
+.settings-card{margin:12px 0!important;padding:22px!important}
+.apps-toolbar{margin:18px 0!important}
+.search{border-radius:8px!important;border-color:var(--is-line)!important}
+.filters .filter{border-radius:7px!important;background:#fff!important;border-color:var(--is-line)!important;color:var(--is-muted)!important;font-size:11px!important}
+.filters .filter.active,.filters .filter[aria-pressed=true]{background:var(--is-accent-soft)!important;border-color:#d9d6ff!important;color:var(--is-accent-hover)!important}
+.shell,.forms-shell{margin-top:36px!important}
+.forms-layout{gap:14px!important}
+.forms-layout>.panel,.forms-layout>.forms-panel{border-radius:12px!important;padding:16px!important}
+.forms-field,.field{background:#fff!important}
+body.marketing{background:#fff!important}
+.marketing-hero{padding-top:clamp(64px,9vw,112px)!important;padding-bottom:clamp(68px,9vw,112px)!important}
+.marketing-hero h1{font-weight:650!important;letter-spacing:-.06em!important}
+.marketing-section,.detail-section,.showcase-section,.principles-section,.faq-section{padding-top:76px!important;padding-bottom:76px!important}
+.marketing-section h2,.detail-section h2,.showcase-section h2,.principles-section h2,.faq-section h2{font-size:clamp(25px,3.4vw,38px)!important;letter-spacing:-.045em!important;font-weight:640!important}
+.marketing-section p,.detail-section p,.showcase-section p,.principles-section p,.faq-section p{color:var(--is-muted)}
+/* Editors retain their purpose-built canvas, but share the same shell controls */
+.design-toolbar,.toolbar,.editor-toolbar{border-radius:9px!important;box-shadow:none!important}
+.toolbtn{min-height:32px!important}
+.panel,.tool-panel{border-radius:11px!important}
+
+
+/* Project visual refresh — editorial, calm, and product-led */
+:root{
+ --is-ink:#24232b;--is-muted:#77747d;--is-subtle:#9a969e;
+ --is-line:#e9e5e2;--is-surface:#fff;--is-page:#fbfaf8;
+ --is-soft:#f5f2ef;--is-accent:#6557d9;--is-accent-hover:#5144bd;
+ --is-accent-soft:#f0edff;--is-radius:12px;--is-radius-lg:16px;
+ --is-shadow:0 12px 34px rgba(39,32,25,.055);
+ color-scheme:light;
+}
+html,body{background:#fbfaf8}
+body,.page-body{background:#fbfaf8!important;color:#24232b!important;font-family:"DM Sans",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}
+h1,h2,h3,h4{color:#24232b;letter-spacing:-.045em}
+p{color:#77747d}
+.site-header,.home-nav,.app-header,.marketing-nav{
+ background:rgba(251,250,248,.94)!important;backdrop-filter:blur(18px);
+ border-bottom:1px solid #e9e5e2!important;min-height:70px!important;
+ padding-inline:clamp(20px,5vw,76px)!important;
+}
+.brand-name,.marketing-brand{font-family:Manrope,"DM Sans",sans-serif!important;font-weight:750!important;letter-spacing:-.045em!important}
+.nav-links a,.marketing-navlinks a{font-size:12px!important;color:#706d76!important}
+.nav-links a.active,.marketing-navlinks a.active{background:#f0edff!important;color:#5144bd!important}
+.marketing-cta,.btn-launch,.btn-primary-large,.btn-primary-small,.btn-launch-small{
+ background:#6557d9!important;border-color:#6557d9!important;border-radius:8px!important;
+ box-shadow:none!important;font-weight:650!important
+}
+.marketing-cta:hover,.btn-launch:hover,.btn-primary-large:hover,.btn-primary-small:hover{background:#5144bd!important}
+.btn-secondary-small,.btn-secondary,.btn-outline,.toolbtn{
+ border-color:#e7e2df!important;border-radius:8px!important;background:#fff!important
+}
+.card,.panel,.settings-card,.app-card,.project-card,.dashboard-card,.stat-card,.feature-card,.pricing-card,.resource-card,.form-card{
+ border-color:#e9e5e2!important;border-radius:14px!important;box-shadow:none!important
+}
+.card:hover,.app-card:hover,.project-card:hover,.feature-card:hover{box-shadow:0 14px 36px rgba(39,32,25,.07)!important;transform:translateY(-2px)}
+input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{border-color:#e5e0dc!important;border-radius:8px!important}
+footer{background:#fbfaf8!important;border-color:#e9e5e2!important}
+.footer-inner{max-width:1320px!important}
+.marketing-hero{max-width:1320px!important;grid-template-columns:minmax(0,1fr) minmax(400px,.95fr)!important;padding:104px clamp(22px,5vw,72px) 92px!important;gap:54px!important}
+.hero-copy h1{font-family:Manrope,"DM Sans",sans-serif!important;font-size:clamp(54px,7vw,88px)!important;line-height:.99!important;letter-spacing:-.085em!important;font-weight:750!important}
+.hero-copy h1 span{color:#6557d9!important}
+.hero-label,.section-intro .eyebrow,.eyebrow,.section-kicker{color:#6557d9!important;letter-spacing:.12em!important}
+.hero-copy>p{font-size:16px!important;max-width:500px!important}
+.product-window{border-radius:14px!important;box-shadow:0 32px 90px rgba(39,32,25,.10)!important;transform:rotate(.7deg)!important}
+.marketing-proof{background:#fbfaf8!important;border-color:#e9e5e2!important}
+.marketing-section{max-width:1320px!important;padding:92px clamp(22px,5vw,72px)!important}
+.section-intro h2,.workflow-inner h2,.marketing-bottom h2{font-family:Manrope,"DM Sans",sans-serif!important;font-weight:700!important;letter-spacing:-.075em!important}
+.product-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+.product-card{border-radius:13px!important;padding:25px!important;min-height:245px!important}
+.product-icon{background:#f0edff!important;color:#6557d9!important;border-radius:10px!important}
+.workflow-section{background:#f4f1ed!important;border-color:#e9e5e2!important}
+.workflow-inner{max-width:1320px!important;padding:92px clamp(22px,5vw,72px)!important}
+.marketing-bottom{max-width:1320px!important;padding:95px 24px!important}
+.marketing-footer{max-width:1320px!important}
+.dashboard-welcome{margin-top:58px!important}
+.dashboard-welcome h1{font-family:Manrope,"DM Sans",sans-serif!important;font-size:clamp(32px,4vw,48px)!important;letter-spacing:-.07em!important}
+.feature-card{padding:24px!important;min-height:190px}
+.feature-card h3{font-size:17px!important}
+.apps-hero h1,.page-hero .hero-title{font-family:Manrope,"DM Sans",sans-serif!important;font-weight:750!important;letter-spacing:-.075em!important}
+@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.marketing-hero{grid-template-columns:1fr!important}.hero-art{min-height:380px!important}}
+@media(max-width:600px){.product-grid{grid-template-columns:1fr!important}.marketing-hero{padding:65px 20px 55px!important}.hero-copy h1{font-size:clamp(48px,13vw,68px)!important}.marketing-section,.workflow-inner{padding:65px 20px!important}.marketing-nav{padding-inline:16px!important}}
